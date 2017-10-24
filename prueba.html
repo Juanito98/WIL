@@ -1,9 +1,89 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>HOLA</title>
+	<meta charset="utf-8">
+	<title>TITLE</title>
+	<style>
+		h1 {
+			color : white;
+			text-align: center;
+		}
+		#myId {
+			background-color: red;
+		}
+		.myClass {
+			font-family: cursive;
+			padding: 30px;
+			border: dashed;
+		}
+		table, tr, th, td {
+			padding: 10px;
+			border: 1px solid;
+			text-align: center;
+			border-collapse: collapse;
+		}
+	</style>
+	<script>
+		function myFunction() {
+			document.getElementById('Demo').innerHTML = "WOW";
+		}
+	</script>
 </head>
 <body>
+	<div style="background-color: black;">
+		<h1>Aprendiendo HTML</h1>
+	</div>
+		<div>
+		<p title="Titulo de parrafo">Hola mundo</p>
+		<pre class="myClass">
+			Con < pre > preserva espacios
+			y saltos de línea.
+		</pre>
+		<p>Una <abbr title="Abreviación" id="myId">abbr</abbr> es distinta de un título</p>
+		<img src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2017/09/flash.jpg" alt="Ya no existe esta imagen" title="The flash">
+		<br>
+		<blockquote>Here's a <q>long</q> quotation</blockquote>
+		<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+		<table>
+			<caption>Table</caption>
+			<tr>
+				<th>Name</th>
+				<th>Age</th>
+			</tr>
+			<tr>
+				<td>Juan</td>
+				<td>18 años</td>
+			</tr>
+			<tr>
+				<td>Carlos</td>
+				<td>16 años</td>
+			</tr>
+		</table>
+		<ul style="list-style-type: disc;">
+			<caption>Lista</caption>
+			<li>Pan</li>
+			<li>Tostadas</li>
+			<li>Tortillas</li>
+		</ul>
+	</div>
+	<div>
+		<iframe src="prueba.html"></iframe>
+	</div>
+	<div>
+		<button type="button" onclick="myFunction()">Click me</button>
+		<p id="Demo">Veamos qué pasa</p>
+	</div>
+	<div>
+		<pre>
+			<code>
+				x = 5;
+				y = 4;
+				z = x + y;
+			</code>
 
+			Press <kbd>Ctrl + S</kbd>
+			Oops <samp>Error!</samp>
+		</pre>
+	</div>
 </body>
 </html>
