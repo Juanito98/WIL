@@ -6,7 +6,6 @@ nav ul {
 	background-color: gray;
 }
 
-
 nav ul li {
 	display: inline;
 	padding: 10px 30px;
@@ -18,6 +17,23 @@ nav ul li a {
 	color: black;
 }
 nav ul li:hover, nav ul a:hover {
+	background-color: black;
+	color: white;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+tr, td {
+	padding: 10px;
+	border: 1px solid;
+	text-align: left;
+}
+
+th {
+	padding: 5px;
+	text-align: center;
 	background-color: black;
 	color: white;
 }
