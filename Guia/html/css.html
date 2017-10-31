@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>WIL</title>
+	<link rel="stylesheet" type="text/css" href="../css/myStyles.css">
+</head>
+<body>
+	<nav>
+		<ul>
+			<li style="font-family: Courier New; color: white; text-shadow: 1px 1px white;"><a href="index.html">WIL</a></li>
+			<li><a href="html.html">HTML</a></li>
+			<li><a href="#">CSS</a></li>
+			<li><a href="js.html">JavaScript</a></li>
+		</ul>
+	</nav>
+
+	<table>
+		<tr>
+			<th>CSS</th>
+			<th>Combinators</th>
+			<th>Ejemplo de Sintaxis</th>
+		</tr>
+		<tr>
+			<td>Decendant Selector</td>
+			<td>Selecciona todos los descendientes que cierto elemento</td>
+			<td><span class="highlight">div p</span>. <i>Todos los elementos p que estén dentro de div tendrán el diseño</i></td>
+		</tr>
+		<tr>
+			<td>Child Selector</td>
+			<td>Selecciona a todos los hijos inmediatos de un cierto elemento</td>
+			<td><span class="highlight">div > p</span>. <i>Todos los p que sean hijo inmediato de div</i></td>
+		</tr>
+		<tr>
+			<td>Adjacent Sibling Selector</td>
+			<td>Selecciona al elemento siguiente en el mismo nivel que cierto elemento. Deben tener mismo padre.</td>
+			<td><span class="highlight">div + p</span>. <i>El elemento p que este justo algún div</i></td>
+		</tr>
+		<tr>
+			<td>General Sibling Selector</td>
+			<td>Selecciona a los elementos del mismo nivel que cierto elemento. Deben tener mismo padre.</td>
+			<td><span class="highlight">div ~ p</span>. <i>Los elementos p que esten justo después de div</i></td>
+		</tr>
+	</table>
+
+	<div>
+		<h1>Ejercicio 1</h1>
+		<div style="background-color: black; height: 400px;">
+			<div style="height: 40px;"></div>
+			<div style="background-color: yellow; height: 320px; width: 80%; margin: auto;">
+				<div style="height: 40px;"></div>
+				<div style="background-color: red; height: 240px; width: 60%; margin: auto;">
+					<div style="height: 40px;"></div>
+					<div style="background-color: blue; height: 160px; width: 40%; margin: auto;">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

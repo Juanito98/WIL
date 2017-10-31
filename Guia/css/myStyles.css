@@ -1,3 +1,11 @@
+.highlight {
+	background-color: yellow;
+}
+
+#demo {
+	text-align: center;
+}
+
 nav ul {
 	list-style-type: none;
 	border: 0px;
@@ -12,17 +20,18 @@ nav ul li {
 	font-family: "Times New Roman";
 	font-size: larger;
 }
-nav ul li a {
+nav a {
 	text-decoration: none;
 	color: black;
 }
-nav ul li:hover, nav ul a:hover {
+nav li:hover, nav a:hover {
 	background-color: black;
 	color: white;
 }
 
 table {
 	border-collapse: collapse;
+	width: 100%;
 }
 
 tr, td {

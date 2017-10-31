@@ -1,4 +1,4 @@
-function piramide(n) {
+function piramide(elem, n) {
 	var st = "";
 	for (var i = 1; i <= n; i++) {
 		for (var j = 1; j <= i; j++) {
@@ -6,5 +6,5 @@ function piramide(n) {
 		}
 		st += "<br>";
 	}
-	document.getElementById('demo').innerHTML = st;
+	elem.innerHTML = st;
 }
