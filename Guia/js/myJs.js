@@ -7,4 +7,5 @@ function piramide(elem, n) {
 		st += "<br>";
 	}
 	elem.innerHTML = st;
+	console.log("console.log -> this is a message.");
 }
