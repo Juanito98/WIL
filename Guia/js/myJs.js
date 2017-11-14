@@ -115,3 +115,22 @@ var deepEqual = function(obj1, obj2) {
         	flag = false;
   return flag;
 }
+
+// Merge dos arreglos
+var merge = function(arr1, arr2) {
+	arr = [];
+  	for(var i = 0; i < arr1.length; i++)
+      arr.push(arr1[i]);
+  	for(var i = 0; i < arr2.length; i++)
+      arr.push(arr2[i]);
+  	return arr;
+}
+
+// Junta arreglos de arreglos en un solo arreglo
+var flatten = function(arr, f = merge) {
+	ans = [];
+  	for(var i = 0; i < arr.length; i++) {
+    	ans = merge(ans, arr[i]);
+    }
+  return ans;
+}
